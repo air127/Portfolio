@@ -1,0 +1,749 @@
+@charset "UTF-8";
+
+@media screen and ( max-width:750px )
+{
+	body{
+		font-size: 28px;
+	}
+	.s{
+		width: 750px;
+
+	}
+	nav ul{
+		display: none;
+		margin-left: auto;
+	margin-right: auto;
+	}
+	#top{
+		width: 750px;
+		height: 100px;
+		background-color: #D39052;
+		display: flex;
+		margin-top: 0;
+		flex-wrap: wrap;
+	}
+	.hamburger-menu{
+		display: block;
+		margin: 25px 0 0 170px;
+	}
+	.menu {
+  list-style: none;
+  position: absolute;
+  width: 550px;
+  height: 800px;
+  top: 0;
+  margin-top: 52px;
+  padding: 0 0 10px 0;
+  clear: both;
+  background: var(--background-navbar);
+  background-color: #FABC59;
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  transform: scale(1, 0);
+  transform-origin: top;
+  margin-left: -500px;
+}
+
+/* Hamburger menu button */
+.menu-btn:checked ~ .menu {
+  transform: scale(1, 1);
+  transform-origin: top;
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+}
+
+/* Hamburger menbu text */
+.menu a {
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 60px;
+  text-transform: capitalize;
+  color: #FFF7ED;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.menu li {
+  border-bottom: 1px solid rgb(83, 65, 65);
+  padding: 15px 0;
+  margin: 0 54px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.menu-btn:checked ~ .menu a,
+.menu-btn:checked ~ .menu li {
+  opacity: 1;
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-icon {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding: 24px 14px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.navicon {
+  background: #655352;
+  display: block;
+  height: 3px;
+  width: 26px;
+  position: relative;
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+}
+
+.navicon:before,
+.navicon:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #655352;
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+}
+
+.navicon:before {
+  top: 9px;
+}
+
+.navicon:after {
+  bottom: 9px;
+}
+
+/* Hamburger Menu Animation Start */
+.menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before {
+  top: 0;
+}
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  bottom: 0;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+  background: rgba(0, 0, 0, 0);
+  transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+}
+/* Hamburger Menu Animation End */
+
+/* Navbar Container */
+.navtext-container {
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar Text */
+.navtext {
+	text-align: center;
+  position: absolute;
+  text-transform: uppercase;
+  color: #ddd;
+  letter-spacing: 4px;
+  font-size: 20px;
+}
+
+	#p_top{
+		display: none;
+	}
+	#s_top{
+		display: block;
+	}
+	footer{
+		width: 750px;
+		height: 100px;
+		margin: 0 auto;
+	}
+	.footer_nav{
+		display: none;
+	}
+	#about,#about_me,#about_we{
+		display: block;
+		margin-left: 0;
+	}
+	#about000,#about001,#about002{	
+		margin-left: 0;
+		font-size: 32px;
+	}
+	#about{
+		margin: 0 0 800px 0;
+	}
+	#about000{
+		width: 750px;
+		padding: 0 30px 0 30px;
+		margin: -110px 0 0 0;
+	}
+	#about001,#about002{
+		width: 750px;
+		height: 1100px;
+		padding: 260px 90px 0 90px;
+	}
+
+	#about001 h2,#about002 h2{
+		padding-bottom: 80px;
+	}
+	#about00{
+		margin: 0 0 180px 0;
+		padding-top: 180px;
+	}
+	#about01{
+		margin: -1600px 115px 0 115px;
+	}
+	#about02{
+		margin: 1100px 115px -200px 115px;
+	}
+	#button01{
+		margin: 197px auto 140px auto;
+	}
+
+	#pagetop{
+		width: 315px;
+		margin: 0 0 81px 390px;
+		font-size: 28px;
+		font-weight: bold;
+	}
+	#copyright{
+		margin: 0 auto;
+		font-size: 20px;
+		padding-top: 40px;
+	}
+
+	/*NOWのページ*/
+	.slider{
+		z-index: -9999;
+	}
+	.s_img{
+		display: block !important;
+	}
+	.p_img{
+		display: none !important;
+	}
+
+	.now h1{
+		font-size: 55px;
+		width: 245px;
+		height: 90px;
+		text-align: center;
+		margin-top: 50px;
+	}
+	.pick h1{
+		font-size: 55px;
+		width: 365px;
+		height: 90px;
+	}
+	.topic01 h2,.topic02 h2{
+		text-align: center;
+	}
+	h3{
+		text-align: center;
+		width: 230px;
+		height: 38px;
+		font-size: 28px;
+		font-weight: bold;
+		margin-bottom: 21px;
+	}
+	.book_title{
+		font-size: 32px;
+		padding: 20px 0 9px 0;
+	}
+	.s_text{
+		display: none;	
+	}
+	.s_text02{
+		display: block;
+		display: inline-block;
+	}
+	.book_author{
+		font-size: 28px;
+	}
+	.book_isbn{
+		display: none;
+	}
+	.topic01{
+	width: 750px;
+	height: 3500px;
+	margin: 0 auto;
+	}
+	.topic02{
+	width: 750px;
+	height: 2500px;
+	}
+	.topic01_box,.topic02_box{
+	flex-wrap: wrap;
+	width: 620px;
+	margin: 0 65px;
+	}
+
+	#book001,#book002,#book003,#book004,
+	#book005,#book006,#book007,#book008,
+	#book009,#book010,#book011,#book012,
+	#book013,#book014,#book015,#book016,
+	#book017,#book018,#book019,#book020{
+		width: 280px;
+		height: 450px;
+	}
+	#book003,#book004,#book007,#book008,#book011,#book012,#book015,#book016,#book019,#book020{
+		margin: 50px 0 0 0;
+	}
+	#book002,#book004,#book006,#book008,#book010,#book012,#book014,#book016,#book018,#book020{
+		margin-left: 60px;
+	}
+
+	.topic03_box,.topic04_box,.topic05_box{
+		flex-wrap: wrap;
+		width: 620px;
+		margin: 620px 65px 0 65px;
+	}
+	/*WEのページ*/
+	/*#we_button02,#we_button03,#we_button04{
+		z-index: -1;
+	}*/
+	.favorite_title{
+		width: 750px;
+		height: 80px;
+	}
+	.title_we{
+		width: 750px;		
+		height: 80px;
+		display: flex;
+		background-color: #534141;
+	}
+
+	#me_name{
+		font-size: 28px;
+		padding-top: 10px;
+		margin-left: 380px;
+	}
+	.title01 h1{
+		font-size: 44px;
+		padding-left: 20px;
+		padding-top: 10px;
+	}
+	.title02 h2{
+		font-size: 36px;
+		padding: 17px 0 0 25px;
+	}
+	#title03{
+		margin: 10px 0 0 80px;
+	}
+	#title04{
+		margin: 10px 0 0 10px;
+	}
+	#breadcrumb{
+		width: 390px;
+		height: auto;
+		text-align: right;
+		margin-top: 0;
+		margin-left: 330px;
+		padding: 0 30px 0 0;
+		background-color: #fff;
+	}
+
+	.we_button{
+		margin: 50px 0 0 10px;
+	}
+	.Favorite h1{
+		font-size: 46px;
+		margin: 80px auto 60px auto;
+	}
+
+	.box{
+		width: 396px;
+	}
+	.Favorite img{
+		margin: 59px 0 20px 40px;
+		width: 164.4px;
+		height: 240px;
+	}
+	.box_title{
+		font-size: 32px;
+		margin: 0 0 25px 25px;
+	}
+	.box_author{
+		font-size: 28px;
+		margin: 0 0 0 25px;
+	}
+
+	.box_book{
+		width: 370px;
+		height: 188px;
+		margin: 135px 0 0 0;
+	}
+	.box_sub{
+	width: 396px;
+	height: 110px;
+	margin: 21px 0 0 -410px;
+	}
+	.box_time{
+		font-size: 24px;
+	}
+	.box_main{
+		width: 510px;
+		height: 135px;
+		padding-left: 0;
+		font-size: 28px;
+		margin: 235px 0 0 -170px;
+	}
+	.box_main br{
+		display: none;
+	}
+	.favorite{
+		width: 600px;
+		height: 600px;
+		margin: 0 65px 70px 65px;
+	}
+	.button01{
+		margin: 390px 0 0 -510px;
+	}
+	.button002{
+		margin: 380px 0 0 -270px;
+	}
+	.button02{
+		width: 180px;
+		height: 60px;
+		padding-top: 8px;
+		font-size: 28px;
+	}
+	.page{
+		margin: 0 auto 60px auto;
+	}
+
+	/*WE-Creationのページ*/
+	.c_author{
+		font-size: 28px;
+	}
+	.c_time{
+		font-size: 24px;
+		margin: 7px 75px 0 0;
+	}
+	.c_title{
+		font-size: 36px;
+		margin: 18px 0 0 75px;
+	}
+	.c_genre_n{
+		width: 232px;
+		font-size: 28px;
+		margin: 13px 0 0 75px;
+	}
+	.c_genre_e{
+		width: 117px;
+		font-size: 28px;
+		margin: 13px 0 0 75px;
+	}
+	.c_genre_s{
+		width: 54px;
+		font-size: 28px;
+		margin: 13px 0 0 75px;
+	}
+	.c_genre_m{
+		width: 145px;
+		font-size: 28px;
+		margin: 13px 0 0 75px;
+	}
+	.c_genre_h{
+		width: 88px;
+		font-size: 28px;
+		margin: 13px 0 0 75px;
+	}
+	.c_genre_st{
+		width: 117px;
+		font-size: 28px;
+		margin: 13px 0 0 75px;
+	}
+	.c_genre_f{
+		width: 176px;
+		font-size: 28px;
+		margin: 13px 0 0 75px;
+	}
+
+	.c_box01{
+		width: 500px;
+		height: 1260px;
+		flex-wrap: wrap;
+	}
+	.c_box02,.c_box03,.c_box04{
+		width: 500px;
+		height: 1330px;
+		flex-wrap: wrap;
+		margin: 70px auto;
+	}
+	#c_01{
+		width: 500px;
+		height: 630px;
+	}
+	#c_02,#c_04,#c_06,#c_08{
+		width: 500px;
+		height: 630px;
+		margin-left: 0;
+		margin-top: 70px;
+	}
+	#c_03,#c_05,#c_07{
+		width: 500px;
+		height: 630px;
+		margin-top: 70px;
+	}
+
+	#c_08{
+		margin-bottom: 70px;
+	}
+
+	/*ME-MYページ-*/
+	.me_head{
+	width: 750px;
+	height: 60px;
+	background-color: #FABC59;
+	margin: 80px 0 0 0;
+	}
+	.me_head ul{
+		width: 750px;
+		height: 60px;
+		font-size: 28px;
+	}
+	.me_head ul li{
+	padding-left: 10px;
+	font-weight: bold;
+	}
+	.me_title{
+		width: 440px;
+		height: 109px;
+	}
+	.me_c_box01{
+		flex-wrap: wrap;
+		width: 600px;
+		height: 1295px;
+	}
+	#me_c_01{
+		width: 500px;
+		height: 550px;
+		margin: 0 auto;
+	}
+	#me_c_02{
+		width: 500px;
+		height: 550px;
+		margin-left: 0;
+		margin-top: 95px;
+		margin: 0 auto;
+	}
+	#me_c_01 img,#me_c_02 img{
+	padding-top: 55px;
+	}
+
+	/*me_作成ページ*/
+	.create01 h1,.create02 h1{
+		font-size: 32px;
+	}
+	.create02 h1{
+		padding-bottom: 60px;
+	}
+	.create01{
+		width: 750px;
+		height: 1100px;
+		margin: 50px auto 0 auto;
+	}
+	.create02{
+		width: 750px;
+		height: 900px;
+		margin: 350px auto 380px auto;
+	}
+	.search{
+		flex-wrap: wrap;
+	}
+	.search01{
+		width: 500px;
+		font-size: 28px;
+		margin-left: -150px;
+	}
+	.search02{
+		width: 450px;
+		height: 80px;
+		margin: 15px 0 0 35px;
+	}
+	.create02 .search01{
+		margin-left: 50px;
+	}
+	.create02 .search02{
+		margin-left: 190px;
+		margin-top: -60px;
+	}
+	#book_ex01{
+		width: 164.4px;
+		height: 240px;
+		margin-left: 50px;
+		margin-top: 30px;
+		font-size: 24px;
+		padding: 25px 20px 10px 20px;
+	}
+	#book_ex01 br{
+		display: none;
+	}
+	.kouho{
+		width: 350px;
+		height: 181px;
+		margin: -155px 0 0 36px;
+	}
+	.kouho ul{
+		font-size: 28px;
+	}
+	.kouho li{
+		padding: 7px 0;
+	}
+	#book_ex02{
+		width: 450px;
+		height: 80px;
+		margin-left: 38px;
+	}
+	#book_ex03{
+		width: 180px;
+		height: 80px;
+		margin: 23px 0 0 20px;
+		font-size: 28px;
+		font-weight: bold;
+		padding-top: 16px;
+	}
+	.search_textarea{
+		width: 690px;
+		height: 650px;
+		margin: 35px 35px 0 35px;
+	}
+	.button_create{
+		margin: 20px 0 0 55px;
+	}
+	.button_create01{
+		width: 200px;
+		height: 80px;
+		font-size: 28px;
+		padding: 20px 0 0 5px;
+	}
+	.button_create02,.button_create03{
+		width: 200px;
+		height: 80px;
+		font-size: 28px;
+		padding-top: 20px;
+		margin-left: 30px;
+	}
+	.input_box01{
+		margin-left: 50px;
+		font-size: 28px;
+	}
+	.input_box02{
+		margin-left: 30px;
+	}
+	.input_box02 select{
+		height: 70px;
+		width: 230px;
+		font-size: 28px;	
+	}
+	.input_box02{
+		font-size: 28px;
+	}
+
+
+
+	/*bookstore*/
+	.bp_img{
+		display: none;
+	}
+	.bs_img{
+		display: block;
+		margin: 50px 65px 13px 65px;
+	}
+	.bookstore{
+		width: 750px;
+		margin: 100px auto 0 auto;
+	}
+
+	.bookstore01{
+		width: 530px;
+		height: 1790px;
+		flex-wrap: wrap;
+		margin: 0 auto;
+	}
+	.bookstore02{
+		width: 530px;
+		height: 1790px;
+		flex-wrap: wrap;
+		margin: 0 auto;
+	}
+	.bs_01,.bs_04{
+		width: 530px;
+		height: 550px;
+	}
+	.bs_02,.bs_03,.bs_05,.bs_06{
+		width: 530px;
+		height: 550px;
+		margin-left: 0;
+	}
+	h4{
+		font-size: 36px;	
+		text-align: center;
+		padding-left: 0;
+	}
+	#adress{
+		font-size: 20px;
+		margin-left: 18px;
+	}
+	#link{
+		font-size: 20px;
+		margin-left: 18px;
+	}
+
+
+	/*contact*/
+	.contact h1{
+		padding: 100px 0 50px 255px;
+		font-size: 40px;
+	}
+	.contact p{
+		padding: 0 83px 51px 83px;
+		font-size: 28px;
+	}
+	.contact p br{
+		display: none;
+	}
+	.contact_box{
+		width: 750px;
+		height: 1280px;
+		margin: 0 auto 180px auto;
+	}
+	th br{
+		display: block;
+	}
+	form th{
+		width: 160px;
+		padding-right: 0;
+	}
+	form th br{
+		display: block;
+	}
+	.input_button{
+		margin-left: 210px;
+	}
+	.inputs{
+		width: 500px;
+		height: 60px;
+	}
+	.inputs_text{
+		width: 500px;
+		height: 380px;
+	}
+	.input_button01,.input_button02{
+		height: 65px;
+		padding-top: 18px;
+	}
+}
