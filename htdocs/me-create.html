@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8"> 
+<title>私のお気に入りの本-ME 作成ページ</title>
+<meta name="description" content="私のお気に入りの本のME-MYページです"> 
+<link rel="stylesheet" type="text/css" href="css/ress.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width:750px)">
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&family=Paytone+One&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="pc s">	
+<header id="top">
+		<h1 id="p_top"><a href="index.html"><img src="img/logo.png" alt="私のお気に入りの本"></a></h1>
+		<h1 id="s_top"><a href="index.html"><img src="s_img/logos001.png" alt="私のお気に入りの本"></a></h1>
+	<div class="hamburger-menu">
+    <input type="checkbox" class="menu-btn" id="menu-btn">
+    <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li class="top"><a href="now.html">NOW</a></li>
+     	<li><a href="we.html">WE</a></li>
+		<li><a href="me.html">ME</a></li>
+		<li><a href="bookstore.html">BOOKSTORE</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+		<li><a href="me.html">ログイン</a></li>
+    	</ul>
+	</div><!--hamburger-menu-->
+	</header>
+
+	<nav>
+		<ul>
+			<li id="nav_now"><a href="now.html">NOW</a></li>
+			<li id="nav_we"><a href="we.html">WE</a></li>
+			<li id="nav_me"><a href="me.html">ME</a></li>
+			<li id="nav_bookstore"><a href="bookstore.html">BOOKSTORE</a></li>
+			<li id="nav_contact"><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</nav>
+
+	<div class="favorite_title">
+		<div class="title_we">
+		<div class="title01">
+		<h1>ME</h1>
+		</div>
+		<div class="title02">
+		<h2>作成ページ</h2>
+		</div>
+		<p id="me_name">ふうちゃんのページ</p>
+		</div><!--title_we-->
+	</div><!--title-->
+
+	<div class="me_head">
+		<ul>
+			<li><a href="me.html">MYページ</a></li>
+			<li><font color="#FFF7ED"><span class="s_text">作成ページ</span></font></li>
+			<li><a href="#">お気に入り</a></li>
+			<li><a href="#">読書記録</a></li>
+			<li><a href="#">会員情報</a></li>
+			<li><a href="#">ログアウト</a></li>
+		</ul>
+	</div><!--me_head-->
+	<div id="breadcrumb">
+		<ul>
+		<li><a href="index.html">ホーム</a></li>
+		<li>&gt;</li>
+		<li><font color="#FABC59">ME</font></li>
+		<li>&gt;</li>
+		<li><font color="#FABC59">作成<span class="s_text">ページ</span></font></li>
+		</ul>
+	</div><!--breadcrumb-->
+
+	<div class="create01">
+		<h1>お気に入りの本の紹介を作成する</h1>
+		<div class="search">
+		<div class="search01">
+		<form action="cgi-bin/abc.cgi" method="post">
+		<p><label>本の検索</label></p>
+		</div>
+		<div class="search02">
+		<input type="search" name="search" value="" placeholder="本のタイトル、著者名を入力してください"size="40" maxlength="255"></label>
+		</div><!--search02-->
+		<div class="button_search">
+  		<input type="image" src="img/kensaku.png" alt="クリックで送信">
+		</div><!--button_search-->
+		</form>
+		<p id="book_ex01">検索候補から<br>選んで<br>決定された<br>本の画像が<br>表示されます</p>
+	</div><!--search-->
+	<div class="kouho">
+			<ul>
+				<li>検索の候補1が出てきます</li>
+				<li>検索の候補2が出てきます</li>
+				<li>検索の候補3が出てきます</li>
+				<li><span class="s_text">検索の候補4が出てきます</span></li>
+			</ul>
+	</div><!--kouho-->
+	<div class="kouho02">
+		<p id="book_ex02"><span class="s_text">検索の候補からクリックして選んだものが表示される</span></p>
+		<p id="book_ex03">決定</p>
+	</div>
+	<textarea class="search_textarea" textarea name="comment" placeholder="紹介する本の紹介文を入力してください" ></textarea>
+	<div class="button_create">
+		<div class="button_create01">
+			<input type="reset" value="リセット">
+		</div><!--button_crete01-->
+		<div class="button_create02">
+			<input type="button" value="保存">
+		</div><!--button_crete02-->
+		<div class="button_create03">
+			<input type="submit" value="投稿">
+		</div><!--button_crete03-->
+	</div><!--button_crete-->
+	</form>
+	</div><!--create01-->
+
+	<div class="create02">
+		<h1>自分の物語を作成する</h1>
+		<div class="search">
+		<div class="search01">
+			<label class="lavel">タイトル</lavel>
+		</div><!--search01-->
+		<div class="search02">		
+			<label><input type="text" name="name" placeholder="タイトルを入力してください" required></label>
+		</div><!--search02-->
+		</div><!--search-->
+		<div class="input-group">
+			<div class="input_box01">
+			<label>ジャンル</label>
+			</div>
+			<div class="input_box02">
+			<select name="ジャンル">
+			<option value="">ジャンル選択</option>
+			<option value="短編小説">短編小説</option>
+			<option value="長編小説">長編小説</option>
+			<option value="海外文学">海外文学</option>
+			<option value="ノンフィクション">ノンフィクション</option>
+			<option value="SF">SF</option>
+			<option value="ミステリー">ミステリー</option>
+			<option value="ホラー">ホラー</option>
+			<option value="ファンタジー">ファンタジー</option>
+			<option value="エッセイ">エッセイ</option>
+			<option value="心理学">心理学</option>
+			<option value="哲学">哲学</option>
+			<option value="絵本">絵本</option>
+			<option value="コミック">コミック</option>
+			<option value="その他">その他</option>
+			</select>
+			</div>
+		</div><!--genre-->
+		<div class="input-group">
+			<div class="input_box01">  
+			<label>画像選択</label>
+			</div>
+			<div class="input_box02">
+			<input type="file" id="image" name="avatar" accept="image/png, image/jpeg" />
+			</div>
+		</div><!--image-->
+		<textarea class="search_textarea" textarea name="comment" value="" placeholder="文字を入力してください" ></textarea>
+	<div class="button_create">
+		<div class="button_create01">
+			<input type="reset" value="リセット">
+		</div><!--button_crete01-->
+		<div class="button_create02">
+			<input type="button" value="保存">
+		</div><!--button_crete02-->
+		<div class="button_create03">
+			<input type="submit" value="投稿">
+		</div><!--button_crete03-->
+	</div><!--button_crete-->
+	</div>
+	</form>
+	</div><!--create02-->
+	<p id="pagetop"><a href="#top">▲ページトップにもどる</a></p>
+
+	<footer>
+		<ul class="footer_nav">
+			<li id="nav_now"><a href="now.html">NOW</a></li>
+			<li id="nav_we01"><a href="we.html">WE</a></li>
+			<li id="nav_me"><a href="me.html">ME</a></li>
+			<li id="nav_bookstore01"><a href="bookstore.html">BOOKSTORE</a></li>
+			<li id="nav_contact"><a href="contact.html">CONTACT</a></li>
+		</ul>
+		<p id="copyright"><small><font color="#FABC59">&copy;2023 watashino. All rights reserved</font></small></p>
+	</footer>
+</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
